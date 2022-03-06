@@ -7,6 +7,9 @@ syntax on
 " Ignore case when searching
 set ignorecase 
 
+" Smart case
+set smartcase
+
 " Highlight search results
 set hlsearch
 
