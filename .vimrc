@@ -32,7 +32,10 @@ set wildmenu
 " Remap vim 0 to first non-block character
 map 0 ^
 
+" Custom keys for Code  
+imap { {}<Esc>i
+imap ( ()<Esc>i
+
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
 let &t_SI = "\e[6 q"
-
