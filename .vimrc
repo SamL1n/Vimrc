@@ -23,6 +23,9 @@ set wrap
 " Set how many lines of history vim has to remember
 set history=500
 
+" vim directives auto-complete
+set wildmenu
+
 " Remap vim 0 to first non-block character
 map 0 ^
 
