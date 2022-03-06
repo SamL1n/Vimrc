@@ -26,5 +26,7 @@ set history=500
 " Remap vim 0 to first non-block character
 map 0 ^
 
-" Change the cursor to block
+" Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
+let &t_SI = "\e[6 q"
+
