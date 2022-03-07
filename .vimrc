@@ -33,7 +33,7 @@ set wildmenu
 map 0 ^
 
 " Custom keys for Code  
-imap { {}<Esc>i
+imap { {}<Esc>i<CR><CR><Esc>ki<tab>
 imap ( ()<Esc>i
 
 " Block cursor everywhere,Line cursor only in insert mode  
