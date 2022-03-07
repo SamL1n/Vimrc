@@ -29,11 +29,7 @@ set history=500
 " vim directives auto-complete
 set wildmenu
 
-" Custom keys for Code  
-"imap { {}<Esc>i<CR><CR><Esc>ki<tab>
-"imap ( ()<Esc>i
-"imap <c-0> <Esc>f)a
-"imap <c-]> <Esc>f}a
+set relativenumber
 
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
