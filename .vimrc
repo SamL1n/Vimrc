@@ -29,12 +29,11 @@ set history=500
 " vim directives auto-complete
 set wildmenu
 
-" Remap vim 0 to first non-block character
-map 0 ^
-
 " Custom keys for Code  
-imap { {}<Esc>i<CR><CR><Esc>ki<tab>
-imap ( ()<Esc>i
+"imap { {}<Esc>i<CR><CR><Esc>ki<tab>
+"imap ( ()<Esc>i
+"imap <c-0> <Esc>f)a
+"imap <c-]> <Esc>f}a
 
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
