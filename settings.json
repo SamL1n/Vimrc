@@ -1,0 +1,11 @@
+{
+    // ii map to <Esc> 
+   "vim.insertModeKeyBindings" : [
+       {
+           "before":["i","i"],
+           "after":["<Esc>"]
+       }
+   ],
+   // set relative line
+   "vim.smartRelativeLine": true
+}
