@@ -33,10 +33,6 @@ set relativenumber
 
 set scrolloff=5
 
-" Block cursor everywhere,Line cursor only in insert mode  
-let &t_EI = "\e[2 q"
-let &t_SI = "\e[6 q"
-
 " ii map to <Esc>
 imap ii <c-[>
 
@@ -54,3 +50,8 @@ colorscheme snazzy
 
 " Use the wombat airline theme
 let g:airline_theme='wombat'
+
+" Block cursor everywhere,Line cursor only in insert mode  
+let &t_EI = "\e[2 q"
+let &t_SI = "\e[6 q"
+
