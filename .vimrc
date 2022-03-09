@@ -31,6 +31,8 @@ set wildmenu
 
 set relativenumber
 
+set scrolloff=5
+
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
 let &t_SI = "\e[6 q"
