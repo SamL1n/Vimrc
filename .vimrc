@@ -41,6 +41,7 @@ call plug#begin('$VIM/plug-vim/')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
