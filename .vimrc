@@ -37,3 +37,9 @@ let &t_SI = "\e[6 q"
 
 " ii map to <Esc>
 imap ii <c-[>
+
+call plug#begin('$VIM/plug-vim/')
+
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
