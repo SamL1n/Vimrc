@@ -35,9 +35,6 @@ set relativenumber
 let &t_EI = "\e[2 q"
 let &t_SI = "\e[6 q"
 
-" Use the snazzy color scheme
-colorscheme snazzy
-
 " ii map to <Esc>
 imap ii <c-[>
 
@@ -48,3 +45,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
 
 call plug#end()
+
+
+" Use the snazzy color scheme
+colorscheme snazzy
+
+" Use the wombat airline theme
+let g:airline_theme='wombat'
