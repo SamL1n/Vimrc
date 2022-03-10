@@ -16,7 +16,7 @@ set scrolloff=5
 set backspace=indent,eol,start "Better space
 
 imap ii <C-[>
-noremap <leader>q Q
+noremap <leader>q :sh<CR>
 map Q :q<CR>
 map W :w<CR>
 
