@@ -1,42 +1,19 @@
 let mapleader=" "
 
-" Show line number
-set number
-
-" Highlight syntax
-syntax on
-
-" Ignore case when searching
-set ignorecase 
-
-" Smart case
-set smartcase
-
-" Highlight search results
-set hlsearch
-
-" Set utf8 as default encoding
-set encoding=utf8
-
-" 1 tab = 4 spaces
-set shiftwidth=4
+set number " Show line number
+syntax on " Highlight syntax
+set ignorecase " Ignore case when searching
+set smartcase " Smart case
+set hlsearch " Highlight search results
+set encoding=utf8 " Set utf8 as default encoding
+set shiftwidth=4 " 1 tab = 4 spaces
 set tabstop=4 
-
-" Wrap lines
-set wrap
-
-" Set how many lines of history vim has to remember
-set history=500
-
-" vim directives auto-complete
-set wildmenu
-
+set wrap " Wrap lines
+set history=500 " Set how many lines of history vim has to remember
+set wildmenu " vim directives auto-complete
 set relativenumber
-
 set scrolloff=5
-
-" ii map to <Esc>
-imap ii <c-[>
+imap ii <c-[> " ii map to <Esc>
 
 " Split
 map sl :set splitright<CR>:vsplit<CR>
@@ -48,6 +25,7 @@ map <leader>j <C-w>j
 map <leader>k <C-w>k
 map <leader>l <C-w>l
 
+
 call plug#begin('$VIM/plug-vim/')
 
 Plug 'vim-airline/vim-airline'
@@ -58,10 +36,10 @@ Plug 'preservim/nerdtree'
 call plug#end()
 
 
-" Use the snazzy color scheme
+" Use the snazzy color scheme as default
 colorscheme snazzy
 
-" Use the wombat airline theme
+" Use the wombat airline theme as default
 let g:airline_theme='wombat'
 
 " Block cursor everywhere,Line cursor only in insert mode  
