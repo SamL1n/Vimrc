@@ -49,6 +49,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
 Plug 'preservim/nerdtree'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
