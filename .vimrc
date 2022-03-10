@@ -38,6 +38,16 @@ set scrolloff=5
 " ii map to <Esc>
 imap ii <c-[>
 
+" Split
+map sl :set splitright<CR>:vsplit<CR>
+map sh :set nosplitright<CR>:vsplit<CR>
+map sj :set splitbelow<CR>:split<CR>
+map sk :set nosplitbelow<CR>:split<CR>
+map <leader>h <C-w>h
+map <leader>j <C-w>j
+map <leader>k <C-w>k
+map <leader>l <C-w>l
+
 call plug#begin('$VIM/plug-vim/')
 
 Plug 'vim-airline/vim-airline'
