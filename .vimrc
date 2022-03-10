@@ -13,6 +13,7 @@ set history=500 " Set how many lines of history vim has to remember
 set wildmenu " vim directives auto-complete
 set relativenumber
 set scrolloff=5
+set backspace=indent,eol,start "Better space
 
 imap ii <C-[>
 map Q :q<CR>
