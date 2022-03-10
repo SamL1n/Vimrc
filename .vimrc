@@ -14,8 +14,8 @@ set wildmenu " vim directives auto-complete
 set relativenumber
 set scrolloff=5
 imap ii <c-[> " ii map to <Esc>
-noremap Q :q<CR>
-noremap W :w<CR>
+map Q :q<CR>
+map W :w<CR>
 
 " Split
 map sl :set splitright<CR>:vsplit<CR>
