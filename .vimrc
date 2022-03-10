@@ -6,7 +6,7 @@ set ignorecase " Ignore case when searching
 set smartcase " Smart case
 set hlsearch " Highlight search results
 set encoding=utf8 " Set utf8 as default encoding
-set shiftwidth=4 " 1 tab = 4 spaces
+set shiftwidth=4 " 1 tab = 4 space
 set tabstop=4 
 set wrap " Wrap lines
 set history=500 " Set how many lines of history vim has to remember
@@ -14,6 +14,8 @@ set wildmenu " vim directives auto-complete
 set relativenumber
 set scrolloff=5
 imap ii <c-[> " ii map to <Esc>
+noremap Q :q<CR>
+noremap W :w<CR>
 
 " Split
 map sl :set splitright<CR>:vsplit<CR>
