@@ -1,3 +1,5 @@
+let mapleader=" "
+
 " Show line number
 set number
 
