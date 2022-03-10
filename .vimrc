@@ -19,6 +19,11 @@ imap ii <C-[>
 noremap <leader>q :sh<CR>
 map Q :q<CR>
 map W :w<CR>
+map <leader><CR> 
+
+noremap = nzz
+noremap - Nzz
+noremap <leader><CR> :nohlsearch<CR>
 
 " <C-v> has been used for paste in powershell
 map <leader>v <C-v>
