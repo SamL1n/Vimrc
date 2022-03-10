@@ -13,9 +13,12 @@ set history=500 " Set how many lines of history vim has to remember
 set wildmenu " vim directives auto-complete
 set relativenumber
 set scrolloff=5
-imap ii <c-[> " ii map to <Esc>
+
+imap ii <C-[>
 map Q :q<CR>
 map W :w<CR>
+" <C-v> has been used for paste in powershell
+map <leader>v <C-v>
 
 " Split
 map sl :set splitright<CR>:vsplit<CR>
