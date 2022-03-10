@@ -36,11 +36,14 @@ Plug 'preservim/nerdtree'
 call plug#end()
 
 
-" Use the snazzy color scheme as default
-colorscheme snazzy
+" Snazzy
+colorscheme snazzy " Use the snazzy color scheme as default
 
-" Use the wombat airline theme as default
-let g:airline_theme='wombat'
+" AirLine
+let g:airline_theme='wombat' " Use the wombat airline theme as default
+
+" NerdTree
+map nt :NERDTreeToggle<CR>
 
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
