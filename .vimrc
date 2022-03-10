@@ -16,8 +16,10 @@ set scrolloff=5
 set backspace=indent,eol,start "Better space
 
 imap ii <C-[>
+noremap <leader>q Q
 map Q :q<CR>
 map W :w<CR>
+
 " <C-v> has been used for paste in powershell
 map <leader>v <C-v>
 
