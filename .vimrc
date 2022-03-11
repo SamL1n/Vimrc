@@ -56,6 +56,7 @@ Plug 'preservim/nerdtree'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -74,6 +75,9 @@ let NERDTreeChDirMode=3 " always change the current working directory
 let g:ale_linters = {
 \ 'cs': ['OmniSharp']
 \}
+
+" OmniSharp
+let g:OmniSharp_selector_ui = 'fzf'    " Use fzf
 
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
