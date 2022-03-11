@@ -19,7 +19,6 @@ imap ii <C-[>
 noremap <leader>q :sh<CR>
 map Q :q<CR>
 map W :w<CR>
-map <leader><CR> 
 
 noremap = nzz
 noremap - Nzz
