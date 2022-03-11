@@ -55,6 +55,7 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'preservim/nerdtree'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
