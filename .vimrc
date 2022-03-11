@@ -72,9 +72,7 @@ map nt :NERDTreeToggle<CR>
 let NERDTreeChDirMode=3 " always change the current working directory
 
 " Ale
-let g:ale_linters = {
-\ 'cs': ['OmniSharp']
-\}
+let g:ale_linters = { 'cs': ['OmniSharp'] }
 
 " OmniSharp
 let g:OmniSharp_selector_ui = 'fzf'    " Use fzf
