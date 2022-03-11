@@ -66,6 +66,7 @@ let g:airline_theme='wombat' " Use the wombat airline theme as default
 
 " NerdTree
 map nt :NERDTreeToggle<CR>
+let NERDTreeChDirMode=3 " always change the current working directory
 
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
