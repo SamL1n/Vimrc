@@ -54,6 +54,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
 Plug 'preservim/nerdtree'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -67,6 +68,11 @@ let g:airline_theme='wombat' " Use the wombat airline theme as default
 " NerdTree
 map nt :NERDTreeToggle<CR>
 let NERDTreeChDirMode=3 " always change the current working directory
+
+" Ale
+let g:ale_linters = {
+\ 'cs': ['OmniSharp']
+\}
 
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
