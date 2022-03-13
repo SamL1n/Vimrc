@@ -14,6 +14,7 @@ set wildmenu " vim directives auto-complete
 set relativenumber
 set scrolloff=5
 set backspace=indent,eol,start "Better space
+set updatetime=500
 
 imap ii <C-[>
 noremap <leader>q :sh<CR>
@@ -55,8 +56,7 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'preservim/nerdtree'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -73,11 +73,26 @@ let NERDTreeChDirMode=3 " always change the current working directory
 
 " Ale
 let g:ale_linters = { 'cs': ['OmniSharp'] }
+let g:ale_sign_error = '•'
+let g:ale_sign_warning = '•'
+let g:ale_sign_info = '·'
+let g:ale_sign_style_error = '·'
+let g:ale_sign_style_warning = '·'
 
 " OmniSharp
-let g:OmniSharp_selector_ui = 'fzf'    " Use fzf
+"let g:OmniSharp_selector_ui = ''     
+"let g:OmniSharp_highlighting = 3
+"let g:OmniSharp_popup_position = 'peek'
+
+
 
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
 let &t_SI = "\e[6 q"
+
+"augroup omnisharp_commands
+"	autocmd!
+"	autocmd CursorHold *.cs OmniSharpTypeLookup
+"	autocmd FileType cs nmap <leader> gd <Plug>(omnisharp_go_to_definition)
+"augroup END
 
