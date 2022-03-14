@@ -54,9 +54,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
 Plug 'preservim/nerdtree'
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'dense-analysis/ale'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 
 call plug#end()
 
@@ -71,28 +70,6 @@ let g:airline_theme='wombat' " Use the wombat airline theme as default
 map nt :NERDTreeToggle<CR>
 let NERDTreeChDirMode=3 " always change the current working directory
 
-" Ale
-let g:ale_linters = { 'cs': ['OmniSharp'] }
-let g:ale_sign_error = '•'
-let g:ale_sign_warning = '•'
-let g:ale_sign_info = '·'
-let g:ale_sign_style_error = '·'
-let g:ale_sign_style_warning = '·'
-
-" OmniSharp
-"let g:OmniSharp_selector_ui = ''     
-"let g:OmniSharp_highlighting = 3
-"let g:OmniSharp_popup_position = 'peek'
-
-
-
 " Block cursor everywhere,Line cursor only in insert mode  
 let &t_EI = "\e[2 q"
 let &t_SI = "\e[6 q"
-
-"augroup omnisharp_commands
-"	autocmd!
-"	autocmd CursorHold *.cs OmniSharpTypeLookup
-"	autocmd FileType cs nmap <leader> gd <Plug>(omnisharp_go_to_definition)
-"augroup END
-
