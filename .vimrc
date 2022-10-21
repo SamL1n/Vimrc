@@ -42,7 +42,7 @@ inoremap <C-l> <Right>
 "map <leader>j <C-w>j
 "map <leader>k <C-w>k
 "map <leader>l <C-w>l
-"
+
 "map <up> :res +5<CR>
 "map <down> :res -5<CR>
 "map <left> :vertical resize-5<CR>
